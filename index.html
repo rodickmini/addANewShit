@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ADD A NEW SHiT</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+
+    <div id="notes_container">
+        <div id="edit_area">
+            <textarea id="note_input"></textarea>
+            <div class="color_board" id="input_color_board">
+                <a class="each_color red_div"></a>
+                <a class="each_color green_div"></a>
+                <a class="each_color blue_div"></a>
+                <a class="each_color yellow_div"></a>
+            </div>
+            <div id="trigger">_ADD!</div><br />
+            <a id="note_button">Add a new sh*t!</a>
+        </div>
+        <ul id="list"></ul>
+        <div id="redo"><a href="#">redo</a></div>
+    </div>
+    <div id="trash"></div>
+
+    <script type="text/template" id="note_template">
+        <pre><%- name %></pre>
+        <a class="destroy" title="点击删除此条便签" id="cli_del"></a>
+        <div class="color_board">
+            <a class="each_color red_div"></a>
+            <a class="each_color green_div"></a>
+            <a class="each_color blue_div"></a>
+            <a class="each_color yellow_div"></a>
+        </div>
+    </script>
+
+</body>
+<script type="text/javascript" src="libs/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="libs/underscore-min.js"></script>
+<script type="text/javascript" src="libs/json2.js"></script>
+<script type="text/javascript" src="libs/backbone-min.js"></script>
+<script type="text/javascript" src="libs/backbone-localstorage.js"></script>
+<script type="text/javascript" src="js/note.js"></script>
+<script type="text/javascript" src="js/small_animations.js"></script>
+</html>
